@@ -6,7 +6,7 @@ Equipment
 	
 	>> TCRT5000L x 6
    	>> WS2812B 30LEDS x6
-    	>> switch x 7 
+	>> switch x 7 
 	>> Board Practicum
 
 Function & Rule

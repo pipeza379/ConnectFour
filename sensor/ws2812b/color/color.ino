@@ -2,7 +2,7 @@
 
 #define LED_PIN     PIN_PD5
 #define NUM_LEDS    30
-#define BRIGHTNESS  64
+#define BRIGHTNESS  200
 #define LED_TYPE    WS2812B
 #define COLOR_ORDER GRB
 #define UPDATES_PER_SECOND 100
@@ -29,8 +29,9 @@ void loop()
 
        uint8_t brightness = 255;
  
-   for( static uint8_t colorIndex = 0; colorIndex < 30; colorIndex++) {
-        leds[colorIndex] = ColorFromPalette( RainbowColors_p, colorIndex*8, brightness, LINEARBLEND);
+   for(uint8_t colorIndex = 0; colorIndex < 30; colorIndex++) {
+        leds[colorIndex] = ColorFromPalette( RainbowColors_p, colorIndex*3+105, brightness, LINEARBLEND);
+        brightness+=50;
 //        leds[i+5] = ColorFromPalette( RainbowColors_p, colorIndex, brightness, LINEARBLEND);
 //        leds[i+10] = ColorFromPalette( RainbowColors_p, colorIndex, brightness, LINEARBLEND);
 //        leds[i+15] = ColorFromPalette( RainbowColors_p, colorIndex, brightness, LINEARBLEND);
@@ -44,7 +45,11 @@ void loop()
 //    FillLEDsFromPaletteColors( startIndex);
     
 //    FastLED.show();
-//    FastLED.delay(100);
+    FastLED.delay(500);
+//    for(int i=0;i<30;i++)
+//      leds[i]=CRGB::Black;
+//    FastLED.show();
+    FastLED.clear();
 }
 
 void FillLEDsFromPaletteColors( uint8_t colorIndex)

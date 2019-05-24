@@ -1,3 +1,6 @@
+01204223 Practicum for Computer Engineering
+Department of Computer Engineering, Faculty of Engineering, Kasetsart University.
+
 ###ConnectFour###
 
 code with Arduino
@@ -6,7 +9,8 @@ Equipment
 	
 	>> TCRT5000L x 6
 	>> WS2812B 30LEDS x6
-	>> switch x 7 
+	>> switch x 7
+	>> switch two state x 1 
 	>> Board Practicum
 
 Function & Rule
@@ -16,3 +20,12 @@ Function & Rule
 	3.เมื่อมีผู้ชนะ จะแสดงสีของผู้ชนะ จากนั้นจะเคลียร์กระดาน ผู้แพ้จะเป็นคนเริ่มก่อน หากเสมอจะแสดงสีของสองฝ่ายอย่างละครึ่ง
 	4.กด Reset เพื่อตั้งค่าและเริ่มต้นใหม่
 	
+Source Code
+	led/led.ino
+
+Board Schemetic
+	schematic.png
+
+Developer
+	Chisatnupong
+	Kittapon Junsupakul 6010504651

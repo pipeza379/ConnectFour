@@ -27,5 +27,5 @@ Board Schemetic
 	schematic.png
 
 Developer
-	Chisatnupong
-	Kittapon Junsupakul 6010504651
+	chitsanupong  Voravijitchaikul  6010502543
+	Kittapon      Junsupakul        6010504651
